@@ -15,6 +15,7 @@
 		333B552F284BE99B0033EC83 /* simple_render_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 333B552E284BE99B0033EC83 /* simple_render_system.cpp */; };
 		3371A4D927F5BC530096F8CB /* Ph_Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3371A4D727F5BC530096F8CB /* Ph_Model.cpp */; };
 		33BDB18B27FB7C18001BC605 /* Ph_Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33BDB18927FB7C18001BC605 /* Ph_Renderer.cpp */; };
+		33C41EFB28592D2300373011 /* Ph_Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33C41EF928592D2300373011 /* Ph_Camera.cpp */; };
 		33C7FBEB27EF1AB2003DAE3F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33C7FBEA27EF1AB2003DAE3F /* main.cpp */; };
 		33C7FBF427EF1B8B003DAE3F /* libvulkan.1.3.204.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C7FBF227EF1B8B003DAE3F /* libvulkan.1.3.204.dylib */; };
 		33C7FBF527EF1B8B003DAE3F /* libvulkan.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C7FBF327EF1B8B003DAE3F /* libvulkan.1.dylib */; };
@@ -61,6 +62,8 @@
 		3371A4D827F5BC530096F8CB /* Ph_Model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ph_Model.hpp; sourceTree = "<group>"; };
 		33BDB18927FB7C18001BC605 /* Ph_Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ph_Renderer.cpp; sourceTree = "<group>"; };
 		33BDB18A27FB7C18001BC605 /* Ph_Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ph_Renderer.hpp; sourceTree = "<group>"; };
+		33C41EF928592D2300373011 /* Ph_Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ph_Camera.cpp; sourceTree = "<group>"; };
+		33C41EFA28592D2300373011 /* Ph_Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ph_Camera.hpp; sourceTree = "<group>"; };
 		33C7FBE727EF1AB2003DAE3F /* VulkanFirst */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VulkanFirst; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C7FBEA27EF1AB2003DAE3F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		33C7FBF227EF1B8B003DAE3F /* libvulkan.1.3.204.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.3.204.dylib; path = ../../VulkanSDK/1.3.204.1/macOS/lib/libvulkan.1.3.204.dylib; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				3310660327F45C20005F49D9 /* Ph_Window.hpp */,
 				333B552D284BE73A0033EC83 /* simple_render_system.hpp */,
 				333B552E284BE99B0033EC83 /* simple_render_system.cpp */,
+				33C41EF928592D2300373011 /* Ph_Camera.cpp */,
+				33C41EFA28592D2300373011 /* Ph_Camera.hpp */,
 				33C7FC0027EF897B003DAE3F /* shaders */,
 			);
 			path = VulkanFirst;
@@ -241,6 +246,7 @@
 				33C7FBEB27EF1AB2003DAE3F /* main.cpp in Sources */,
 				3310660F27F46AC7005F49D9 /* Ph_Pipeline.cpp in Sources */,
 				3371A4D927F5BC530096F8CB /* Ph_Model.cpp in Sources */,
+				33C41EFB28592D2300373011 /* Ph_Camera.cpp in Sources */,
 				3310660427F45C20005F49D9 /* Ph_Window.cpp in Sources */,
 				3310661A27F4B786005F49D9 /* Ph_swapChain.cpp in Sources */,
 				333B552F284BE99B0033EC83 /* simple_render_system.cpp in Sources */,

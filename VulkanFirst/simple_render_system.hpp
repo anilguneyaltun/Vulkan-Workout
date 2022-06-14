@@ -1,9 +1,11 @@
 #ifndef simple_render_system_hpp
 #define simple_render_system_hpp
 
+
 #include "Ph_Device.hpp"
 #include "Ph_Pipeline.hpp"
 #include "Ph_gameObject.hpp"
+#include "Ph_Camera.hpp"
 
 #include <memory>
 #include <vector>
@@ -18,7 +20,7 @@ public:
     SimpleRenderSystem(const SimpleRenderSystem &) = delete;
     SimpleRenderSystem &operator=(const SimpleRenderSystem &) = delete;
     
-    void renderGameObjects(VkCommandBuffer commandBuffer, std::vector<PhGameObject> &gameObjects);
+    void renderGameObjects(VkCommandBuffer commandBuffer, std::vector<PhGameObject> &gameObjects, const PhCamera &camera);
     
 private:
 

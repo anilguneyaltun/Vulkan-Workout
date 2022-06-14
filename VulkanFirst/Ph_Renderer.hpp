@@ -28,6 +28,7 @@ public:
     PhRenderer &operator=(const PhRenderer &) = delete;
 
     VkRenderPass getSwapChainRenderPass() const {return phSwapChain->getRenderPass();}
+    float getAspectRatio() const { return phSwapChain->extentAspectRatio(); }
     bool isFrameInProgress() const {return isFrameStarted;}
     
     VkCommandBuffer getCurrentCommandBuffer() const {
@@ -39,6 +40,7 @@ public:
         assert(isFrameStarted && "Cannot get frame index when frame not in progress");
         return currentImageIndex;
     }
+    
     
     VkCommandBuffer beginFrame();
     void endFrame();
