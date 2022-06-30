@@ -12,6 +12,7 @@
 		3310660F27F46AC7005F49D9 /* Ph_Pipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3310660D27F46AC7005F49D9 /* Ph_Pipeline.cpp */; };
 		3310661627F47296005F49D9 /* Ph_Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3310661427F46F7A005F49D9 /* Ph_Device.cpp */; };
 		3310661A27F4B786005F49D9 /* Ph_swapChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3310661827F4B785005F49D9 /* Ph_swapChain.cpp */; };
+		33184F592868C39200F5974E /* InputController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33184F572868C39200F5974E /* InputController.cpp */; };
 		333B552F284BE99B0033EC83 /* simple_render_system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 333B552E284BE99B0033EC83 /* simple_render_system.cpp */; };
 		3371A4D927F5BC530096F8CB /* Ph_Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3371A4D727F5BC530096F8CB /* Ph_Model.cpp */; };
 		33BDB18B27FB7C18001BC605 /* Ph_Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33BDB18927FB7C18001BC605 /* Ph_Renderer.cpp */; };
@@ -56,6 +57,8 @@
 		3310661727F49B0F005F49D9 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
 		3310661827F4B785005F49D9 /* Ph_swapChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ph_swapChain.cpp; sourceTree = "<group>"; };
 		3310661927F4B786005F49D9 /* Ph_swapChain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Ph_swapChain.hpp; sourceTree = "<group>"; };
+		33184F572868C39200F5974E /* InputController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputController.cpp; sourceTree = "<group>"; };
+		33184F582868C39200F5974E /* InputController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputController.hpp; sourceTree = "<group>"; };
 		333B552D284BE73A0033EC83 /* simple_render_system.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simple_render_system.hpp; sourceTree = "<group>"; };
 		333B552E284BE99B0033EC83 /* simple_render_system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simple_render_system.cpp; sourceTree = "<group>"; };
 		3371A4D727F5BC530096F8CB /* Ph_Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ph_Model.cpp; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				33C41EF928592D2300373011 /* Ph_Camera.cpp */,
 				33C41EFA28592D2300373011 /* Ph_Camera.hpp */,
 				33C7FC0027EF897B003DAE3F /* shaders */,
+				33184F572868C39200F5974E /* InputController.cpp */,
+				33184F582868C39200F5974E /* InputController.hpp */,
 			);
 			path = VulkanFirst;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				33C41EFB28592D2300373011 /* Ph_Camera.cpp in Sources */,
 				3310660427F45C20005F49D9 /* Ph_Window.cpp in Sources */,
 				3310661A27F4B786005F49D9 /* Ph_swapChain.cpp in Sources */,
+				33184F592868C39200F5974E /* InputController.cpp in Sources */,
 				333B552F284BE99B0033EC83 /* simple_render_system.cpp in Sources */,
 				33BDB18B27FB7C18001BC605 /* Ph_Renderer.cpp in Sources */,
 				3310660727F46032005F49D9 /* Application.cpp in Sources */,

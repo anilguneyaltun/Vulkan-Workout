@@ -28,6 +28,8 @@ public:
     bool wasWindowResized(){return framebufferResized;}
     void resetWindowResizedFlag(){framebufferResized = false;}
     
+    GLFWwindow *getGLFWWindow() const {return window;}
+    
     
     ~PhWindow();
     

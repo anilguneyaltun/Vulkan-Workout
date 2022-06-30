@@ -88,5 +88,5 @@ private:
     size_t currentFrame = 0;
 };
 
-}  // namespace lve
+} 
 #endif /*Ph_swapChain_hpp*/

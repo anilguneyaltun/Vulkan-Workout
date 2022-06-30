@@ -10,9 +10,12 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/constants.hpp>
 
+
+#include "InputController.hpp"
 #include "simple_render_system.hpp"
 #include "Ph_Camera.hpp"
 
+#include <chrono>
 #include <stdexcept>
 #include <array>
 #include <iostream>
@@ -97,15 +100,24 @@ void Application::run(){
     SimpleRenderSystem simpleRenderSystem{phDevice, phRenderer.getSwapChainRenderPass()};
     PhCamera camera{};
     
-   
+    auto currentTime = std::chrono::high_resolution_clock::now();
+    
+    auto camObject = PhGameObject::createGameObject();
+    InputController cameraController{};
+    
     
     while(!phWindow.shouldClose()){
         glfwPollEvents();
+        
+        auto newTime = std::chrono::high_resolution_clock::now();
+        float frame = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count();
+        currentTime = newTime;
+            
+        cameraController.moveInPlaneXZ(phWindow.getGLFWWindow(), frame, camObject);
+        camera.setViewYXZ(camObject.transform.translation, camObject.transform.rotation);
+        
         float aspect = phRenderer.getAspectRatio();
-        //camera.setOrthographicProjection(-aspect, aspect, -1, 1, -1, 1);
-        camera.setPerspectiveProjection(glm::radians(50.0f), aspect, 0.1f, 10.f);
-        
-        
+        camera.setPerspectiveProjection(glm::radians(50.0f), aspect, 0.1f, 100.f);
         
         if(auto commandBuffer = phRenderer.beginFrame()){
             phRenderer.beginSwapChainRenderPass(commandBuffer);
